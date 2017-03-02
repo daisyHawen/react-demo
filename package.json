@@ -4,7 +4,9 @@
   "description": "react-demo",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack-dev-server --inline --hot",
+    "build": "webpack --display-error-details",
+    "watch": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "babel-preset-react": "^6.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
